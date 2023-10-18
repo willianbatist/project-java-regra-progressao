@@ -24,9 +24,9 @@ public class AppTest {
 
   final static String EXPECTED_TEXT_TO_SUM_WEIGHT = "A soma dos pesos é diferente de 100!";
 
-  final static String RESULT_SUCCESS_PREFIX = "Parabéns! Você alcançou";
+  final static String RESULT_SUCCESS_PREFIX = "Parabéns! Você alcançou ";
   final static String RESULT_SUCCESS_SUFFIX = "! E temos o prazer de informar que você obteve aprovação!";
-  final static String RESULT_FAILURE_PREFIX = "Lamentamos informar que, com base na sua pontuação alcançada neste período,";
+  final static String RESULT_FAILURE_PREFIX = "Lamentamos informar que, com base na sua pontuação alcançada neste período, ";
   final static String RESULT_FAILURE_SUFFIX = ", você não atingiu a pontuação mínima necessária para sua aprovação.";
 
   final static String[] activitiesNames = {"Exercício Alfa", "Projeto Beta",};
