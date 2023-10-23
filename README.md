@@ -303,17 +303,19 @@ Digite a nota obtida para Projeto Jogo de Advinhação:
 <details>
 <summary>Descrição</summary><br />
 
-Seguindo a regra de negócio definida anteriormente, a soma dos pesos da atividade deve ser igual 100. Crie uma verificação 
+Seguindo a regra de negócio definida anteriormente, a soma dos pesos da atividade deve ser igual 100. Crie uma verificação
 para as somas dos pesos.
 
-Por exemplo, digamos que temos três atividades avaliativa em um dado período. O exercício alfa com peso 30, 
-o exercício beta com peso 10 e o projeto gama com peso 60. Note que o somatório de todos os pesos (30+10+60) precisa, 
-necessariamente, ser 100. Digamos que uma pessoa estudante atingiu a nota de 65 para o exercício alfa, 100 para o 
-exercício beta e 93 no projeto gama, com isso o cálculo da nota final do período faz se:
+Por exemplo, suponhamos que temos três atividades avaliativas em um determinado período: o exercício alfa com peso 40,
+o exercício beta com peso 10 e o projeto gama com peso 60. Observe que a soma de todos os pesos (40+10+60 = 110)
+excede o valor acordado. Da mesma forma, se tivéssemos exercícios cuja soma dos pesos fosse inferior a 100,
+também estaríamos violando a nossa regra de negócio.
 
-$` {(30*65) + (10*100) + (60*93)\over(30+10+60)} = 85.3 `$
+Em cenários como esses, a seguinte mensagem deve ser exibida na tela da pessoa usuária:
 
-Assim, a nota dessa pessoa estudante no período foi de 85.3%.
+```bash
+A soma dos pesos é diferente de 100!
+```
 
 </details>
 
