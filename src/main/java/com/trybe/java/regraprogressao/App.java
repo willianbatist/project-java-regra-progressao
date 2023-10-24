@@ -17,9 +17,10 @@ public class App {
     for (int i = 1; i <= qtsAtividades; i++) {
       System.out.println("Digite o nome da atividade " + i + ":");
       String atividade = scan.next();
+      String atividade2 = scan.next();
       System.out.println("Digite o peso da atividade " + i + ":");
       String pesoAtividade = scan.next();
-      System.out.println("Digite a nota obtida para " + atividade + ":");
+      System.out.println("Digite a nota obtida para " + atividade + " " + atividade2 + ":");
       String notaAtividade = scan.next();
     }
 
