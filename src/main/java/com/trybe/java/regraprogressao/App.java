@@ -14,6 +14,7 @@ public class App {
     Scanner scan = new Scanner(System.in);
     System.out.println("Digite a quantidade de atividades para cadastrar:");
     int qtsAtividades = scan.nextInt();
+    int somaPesos = 0;
     for (int i = 1; i <= qtsAtividades; i++) {
       System.out.println("Digite o nome da atividade " + i + ":");
       String atividade = scan.next();
@@ -22,6 +23,11 @@ public class App {
       String pesoAtividade = scan.next();
       System.out.println("Digite a nota obtida para " + atividade + " " + atividade2 + ":");
       String notaAtividade = scan.next();
+      somaPesos += Integer.parseInt(pesoAtividade);
+
+      if (somaPesos != 100) {
+        System.out.println("A soma dos pesos é diferente de 100!");
+      }
     }
 
     scan.close();
