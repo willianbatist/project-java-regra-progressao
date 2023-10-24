@@ -19,6 +19,8 @@ public class App {
       String atividade = scan.next();
       System.out.println("Digite o peso da atividade " + i + ":");
       String pesoAtividade = scan.next();
+      System.out.println("Digite a nota obtida para " + atividade + ":");
+      String notaAtividade = scan.next();
     }
 
     scan.close();
