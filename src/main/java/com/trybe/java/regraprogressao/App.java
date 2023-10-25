@@ -15,6 +15,7 @@ public class App {
     System.out.println("Digite a quantidade de atividades para cadastrar:");
     int qtsAtividades = scan.nextInt();
     int somaPesos = 0;
+    int totalPesoNota = 0;
     for (int i = 1; i <= qtsAtividades; i++) {
       System.out.println("Digite o nome da atividade " + i + ":");
       String atividade = scan.next();
@@ -24,11 +25,23 @@ public class App {
       System.out.println("Digite a nota obtida para " + atividade + " " + atividade2 + ":");
       String notaAtividade = scan.next();
       somaPesos += Integer.parseInt(pesoAtividade);
-
-      if (somaPesos != 100) {
-        System.out.println("A soma dos pesos é diferente de 100!");
-      }
+      totalPesoNota += Integer.parseInt(notaAtividade) * Integer.parseInt(pesoAtividade);
     }
+
+    if (somaPesos != 100) {
+      System.out.println("A soma dos pesos é diferente de 100!");
+    }
+    double aprovacao = (double) totalPesoNota / (double) somaPesos;
+    String texto;
+    if (aprovacao >= 85) {
+      texto = "Parabéns! Você alcançou " + aprovacao + "%"
+          + "! E temos o prazer de informar que você obteve aprovação!";
+    } else {
+      texto =
+          "Lamentamos informar que, com base na sua pontuação alcançada neste período, " + aprovacao
+              + "%, você não atingiu a pontuação mínima necessária para sua aprovação.";
+    }
+    System.out.println(texto);
 
     scan.close();
   }
