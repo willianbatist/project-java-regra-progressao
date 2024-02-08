@@ -14,7 +14,8 @@ public class App {
     Scanner scan = new Scanner(System.in);
     System.out.println("Digite a quantidade de atividades para cadastrar:");
     int qtsAtividades = scan.nextInt();
-
+    int somaPesos = 0;
+    int totalPesoNota = 0;
     for (int i = 1; i <= qtsAtividades; i++) {
       System.out.println("Digite o nome da atividade " + i + ":");
       String atividade = scan.next();
